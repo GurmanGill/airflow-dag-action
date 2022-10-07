@@ -1,7 +1,5 @@
 FROM python:3.7
 
-RUN python -m venv /opt/venv
-
 # Install airflow
 ENV PYTHON_VERSION 3.7
 ENV AIRFLOW_VERSION=2.2.4
