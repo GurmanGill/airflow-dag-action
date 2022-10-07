@@ -19,8 +19,9 @@ airflow connections import $4
 
 cp -r /action/* /github/workspace/
 
-echo ${PYTHONPATH}
+echo $PYTHONPATH
 export PYTHONPATH="${PYTHONPATH:+${PYTHONPATH}:}${PWD}/$2"
+echo $PYTHONPATH
 export AIRFLOW__CORE__PLUGINS_FOLDER="${PWD}/$5"
 export AIRFLOW__CORE__LOAD_EXAMPLES="$6"
 
